@@ -44,7 +44,3 @@ RUN apk add redis
 
 WORKDIR /home
 
-RUN mkdir /home/data
-COPY ./app /home/app
-
-CMD ["python3", "-u", "/home/app/init.py"]
