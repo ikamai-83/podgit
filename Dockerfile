@@ -44,3 +44,5 @@ RUN apk add redis
 
 WORKDIR /home
 
+# Give back control
+USER root
