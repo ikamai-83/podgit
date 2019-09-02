@@ -44,5 +44,8 @@ RUN apk add redis
 
 WORKDIR /home
 
+USER gitpod
+
+ENV KOPET=1
 # Give back control
 USER root
