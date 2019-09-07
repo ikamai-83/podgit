@@ -12,14 +12,14 @@ RUN apk add --update \--repository=http://dl-cdn.alpinelinux.org/alpine/edge/tes
 
 RUN apk add --update --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
     gflags
-    
+
 RUN apk add --update \
     autoconf \
     g++ \
     gcc \
     make \
     pkgconf \
-    py-zmq 
+    py-zmq
 RUN apk add --no-cache python3 \
     python3-dev \
     build-base \
@@ -36,7 +36,7 @@ RUN pip3 install redis
 #RUN pip3 install google-cloud-pubsub
 RUN pip3 install pika==0.13.0
 RUN apk add redis
-
+RUN pip3 install zerorpc
 #RUN apk del python3-dev \
 #    build-base \
 #    git && \
