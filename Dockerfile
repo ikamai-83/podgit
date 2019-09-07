@@ -36,6 +36,7 @@ RUN pip3 install redis
 #RUN pip3 install google-cloud-pubsub
 RUN pip3 install pika==0.13.0
 RUN apk add redis
+RUN pip3 install zerorpc
 
 #RUN apk del python3-dev \
 #    build-base \
